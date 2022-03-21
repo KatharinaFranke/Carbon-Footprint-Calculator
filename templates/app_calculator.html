@@ -1,8 +1,55 @@
 {% extends "layout.html" %}
 {% block content %}
-        <h1 style="color:blue; text-align: center">App Calculator</h1>
+    <section class="bg-white p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
+        <div class="container">
 
-        <p style="font-size:18px">
-            Here, we will introduce a form where the user will introduce the transport type, and the kilometers.
-        </p>
+            <div class="section_caculator_entry_css">
+                <div class="box">
+                ..
+                </div>
+                <div class="box">
+                    <legend class="border-bottom mb-4">{{ legend }}</legend>
+                    <p>{{ paragraph }}</p>
+                        <form method="POST" action="">
+                            <div class="section_km_fuel_css">
+                                <div class="box">
+                                    {{ form.bus_type.label(class="form-control-label") }}
+                                    {% if form.bus_type.errors %}
+                                        {{ form.bus_type(class="form-control form-control-lg is-invalid") }}
+                                        <div class="invalid-feedback">
+                                            {% for error in form.bus_type.errors %}
+                                                <span>{{ error }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    {% else %}
+                                        {{ form.bus_type(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                                <div class="box">
+                                    {{ form.bus_kms.label(class="form-control-label") }}
+                                    {% if form.bus_kms.errors %}
+                                        {{ form.bus_kms(class="form-control form-control-lg is-invalid") }}
+                                        <div class="invalid-feedback">
+                                            {% for error in form.bus_kms.errors %}
+                                                <span>{{ error }}</span>
+                                            {% endfor %}
+                                        </div>
+                                    {% else %}
+                                        {{ form.bus_kms(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            </br>
+                            <div class="form-group">
+                                {{ form.submit(class="btn btn-primary btn-lg mr-2", style="background-color=#007bff;") }}
+                            </div>
+                        </form>
+                </div>
+                <div class="box">
+                ..
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}
