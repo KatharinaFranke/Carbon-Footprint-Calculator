@@ -1,0 +1,72 @@
+/* From google apis, import roboto type font */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+            /* Background color: at-2 */
+            body {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                color: #333;
+                background: #fff;
+                margin: 0 0;
+                padding: 0 0;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            h1, h2 {
+                margin-bottom: 15px;
+            }
+
+            /***   Navbar   ***/
+            .navbar_carbon {
+              background: #f2935c;
+              color: #fff;
+              height: 60px;
+            }
+
+            .navbar_carbon .container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 100%;
+            }
+
+            .navbar_carbon .logo {
+              font-size: x-large;
+              font-weight: bold;
+            }
+
+            .navbar_carbon .logo a {
+              color: #fff;
+              font-size: x-large;
+              font-weight: bold;
+            }
+
+            .navbar_carbon .logo a:hover {
+              color: lightblue;
+            }
+
+            .navbar_carbon a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            .navbar_carbon a:hover {
+              color: lightblue;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            .navbar_carbon ul {
+              display: flex;
+            }
+
+            .navbar_carbon ul li {
+              margin-left: 20px;
+            }

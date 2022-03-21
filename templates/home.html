@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!--Header-->
+    <section id="home" class="header_carbon">
+          <div class="container">
+            <div>
+              <h1><span class="text-warning"> Transport Carbon Emissions Calculator App</span></h1>
+                <strong>Carbon emissions</strong> constitute the 60% of the ecological footprint, and are one of the
+                main contributors to climate change.
+                </br>
+                </br>
+                <strong>Transport carbon emissions</strong> are an important share of carbon emissions. During the course ENE425 Sustainable Energy
+                and App Development at the Norwegian School of Economics, we design a <strong>methodology</strong> to
+                compute transport carbon emissions, and we develop an <strong>App</strong> to track those emissions.
+                </br>
+                </br>
+                In this web page, I describe that methodology, I deploy an app calculator where any person can work out transport her carbon emissions.
+                I provide a link to the code of the App in my Github account. I also provide the methodoly to work out those emissions.
+                Finally, I introduce a <strong>short bio</strong> and a link to my <strong>curriculum</strong>.
+                <div class="container_buttons_links_header_carbon">
+                   <div class="btn">
+                       <a href="#" class="btn btn-primary btn-lg mr-2", style="background-color=#007bff;">Github</a>
+                   </div>
+                   <div class="btn">
+                       <a href="#" class="btn btn-primary btn-lg mr-2", style="background-color=#007bff;">Methodology</a>
+                   </div>
+                   <div class="btn">
+                       <a href="{{ url_for('app_calculator') }}" class="btn btn-primary btn-lg mr-2", style="background-color=#007bff;">App</a>
+                   </div>
+                </div>
+            </div>
+            <img src="static/pictures/icon_app.svg"  alt=""/>
+          </div>
+    </section>
+
+  <!--Developer-->
+  <section id="developer">
+        <div class="container">
+            <div class="developer">
+                <div class="box">
+
+                </div>
+                <div class="box">
+                    <h3 class="text-center", style="color=#343a40;">Developer</h3>
+                    <p class="color=#343a40">The developer of this app has more than five years of experience in
+                        programing and designing electricity markets.
+                    </p>
+
+                    <div class="card-body text-center">
+                        <img src="static/pictures/mario_square_273_273.svg"
+                             class="rounded-circle w-50 mb-3"
+                             alt="", style="max-width: 180px; max-height: 180px"
+                        />
+                        <h5 class="card-title mb-3">Mario Blázquez de Paz</h5>
+                        <p class="card-text">Mario works in energy economics with an
+                            special focus on the design of electricity markets by using theoretical
+                            models and simulations. He teaches the course Sustainable Energy at NHH,
+                            where he connects green economy, digitalization, and app development.
+                            In his research and teaching, he uses different programming languages to create apps to conduct
+                            economic analysis in the fields of energy economics and sustainability.
+                        </p>
+                        </br>
+                        <div class="container_buttons_developer">
+                           <div class="btn">
+                               <a href="static/blazquez_cv_2021.pdf"  class="btn btn-primary btn-lg mr-2", style="background-color=#007bff;">Curriculum</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+
+                </div>
+            </div>
+        </div>
+  </section>
+
+{% endblock content %}
