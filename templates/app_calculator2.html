@@ -2,13 +2,16 @@
 {% block content %}
     <section id="introduction" class="bg-white p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
         <div class="container">
-          {{ bus_type }}</br>
+
+            {{ bus_type }}</br>
             {{ bus_kms }}</br>
             {{ co2_bus }}</br>
             {{ form.bus_type }}</br>
             {{ form.bus_kms }}</br>
             {{ form.bus_co2 }}
-             <div class="section_caculator_output_css">
+
+
+            <div class="section_caculator_output_css">
                 <div class="box">
                     <legend class="border-bottom mb-4">{{ legend }}</legend>
                     <p>{{ paragraph }}</p>
@@ -58,7 +61,6 @@
                     <canvas id="co2_transport"></canvas>
                 </div>
             </div>
-
 
         </div>
     </section>
